@@ -1,0 +1,34 @@
+{
+  "datasets": [
+    {
+      "path": "bunny-small.off",
+      "sha256": "dda85ca6dc03ed83a0b754611d5c0b1a3c8ba5234e690479ac4a04063e6a7d4d",
+      "bytes": 226247,
+      "source_paths": [
+        "Homework/Handouts/1-HelloWorld/data/bunny.off",
+        "Homework/Handouts/3-DDG/data/bunny.off",
+        "Homework/Handouts/4-Geodesic/data/bunny_small.off"
+      ],
+      "redistribution_status": "not reviewed"
+    },
+    {
+      "path": "cube.obj",
+      "sha256": "51bcd6ca642a677a5f132fc90a1e2df2886c20c7da1daeaa9b65bf1bd91230dd",
+      "bytes": 784,
+      "source_paths": [
+        "Homework/Handouts/1-HelloWorld/data/cube.obj",
+        "Homework/Handouts/4-Geodesic/data/cube.obj"
+      ],
+      "redistribution_status": "not reviewed"
+    },
+    {
+      "path": "sphere.obj",
+      "sha256": "c6c8ee3eee518e9e1d1c155099e16e2f4e568da99ea22ab1d23d45909ae5ef39",
+      "bytes": 39462,
+      "source_paths": [
+        "Homework/Handouts/1-HelloWorld/data/sphere.obj"
+      ],
+      "redistribution_status": "not reviewed"
+    }
+  ]
+}

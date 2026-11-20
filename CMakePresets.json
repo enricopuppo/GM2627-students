@@ -1,0 +1,58 @@
+{
+  "version": 5,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "student",
+      "displayName": "Student viewer",
+      "binaryDir": "${sourceDir}/build/student",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "GM_BUILD_VIEWER": "ON",
+        "GM_BUILD_SOLUTION": "OFF"
+      }
+    },
+    {
+      "name": "headless",
+      "inherits": "student",
+      "binaryDir": "${sourceDir}/build/headless",
+      "cacheVariables": {
+        "GM_BUILD_VIEWER": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "student",
+      "configurePreset": "student",
+      "configuration": "Debug"
+    },
+    {
+      "name": "headless",
+      "configurePreset": "headless",
+      "configuration": "Debug"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "student",
+      "configurePreset": "student",
+      "configuration": "Debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "headless",
+      "configurePreset": "headless",
+      "configuration": "Debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}
