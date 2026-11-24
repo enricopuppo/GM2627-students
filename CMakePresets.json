@@ -12,8 +12,7 @@
       "binaryDir": "${sourceDir}/build/student",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
-        "GM_BUILD_VIEWER": "ON",
-        "GM_BUILD_SOLUTION": "OFF"
+        "GM_BUILD_VIEWER": "ON"
       }
     },
     {

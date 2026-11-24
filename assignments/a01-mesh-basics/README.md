@@ -2,7 +2,10 @@
 
 Read the [common setup guide](../../SETUP.md) once for installation and the shared
 build tree. Read the [handout PDF](handout/A01.pdf) or [handout source](handout/A01.md)
-for tasks, computational contracts, allowed library calls and required evidence.
+for tasks, experiments and required evidence. Detailed function contracts and
+allowed library calls are in [a01.hpp](include/gm/a01.hpp) and the skeleton comments.
+The [classroom slides](../../slides/L1-Assignment1-Cpp.pdf) introduce Eigen,
+libigl and the subdivision implementation.
 Student repository: [GM2627-students](https://github.com/enricopuppo/GM2627-students.git).
 
 ## Build and launch A01 only
@@ -57,7 +60,7 @@ screenshots with your operating system, labeling model, mode and iteration.
 For the subdivision exercise, use watertight (closed), consistently oriented
 triangular manifold meshes without isolated vertices. Boundary handling is not a
 student task; the supplied validation rejects unsupported inputs as explained in
-the handout.
+the computational interface.
 
 ## Public numerical checks and batch operations
 
@@ -94,5 +97,5 @@ tree. CTest's `starter_todo` checks the untouched release and should be excluded
 implementation (`ctest --preset student -E starter_todo`); build its test executable
 first if you choose to run release checks.
 
-Prepare the evidence listed in the handout. Final submission details and course
-conduct policy will be published in this repository before teaching release.
+Prepare the evidence listed in the handout. Follow the [submission guide](../../SUBMISSION.md)
+for your private repository, assignment updates and combined submission before the final exam.

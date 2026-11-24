@@ -1,3 +1,5 @@
 # Generated teaching artifacts are binary; do not apply text/whitespace processing.
 *.pdf binary
 *.png binary
+*.key binary
+*.pptx binary

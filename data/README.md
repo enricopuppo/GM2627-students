@@ -1,11 +1,13 @@
-# A01 input meshes
+# Assignment input meshes
 
-Run the supplied applications from the repository root. Load `data/cube.obj`,
-`data/sphere.obj` or `data/bunny-small.off` from the viewer dataset selector or by
-path. The starter opens the cube before any computational TODO is implemented.
-These are the inputs for the handout's shading and watertight subdivision tasks.
+A01 uses `cube.obj`, `sphere.obj` and `bunny-small.off` for shading and watertight
+sqrt(3) subdivision. Run applications from the repository root. The viewer opens
+the cube before any computational TODO is implemented. See the
+[A01 README](../assignments/a01-mesh-basics/README.md) for controls and commands.
 
-`manifest.json` records byte sizes, SHA-256 hashes and original source identifiers.
-Preserve the mesh files and their vertex/face ordering; write exported results to
-another filename. For example, use `build/a01-result.off` for a generated result.
+`manifest.json` records original source identifiers, byte sizes and SHA-256 hashes.
+Preserve mesh contents and input ordering. Save generated meshes and temporary
+results under the ignored `build/` directory, for example `build/a01-result.off`.
+Additional assignment data will be supplied with later releases.
+
 Mesh redistribution provenance remains under instructor review in this preview.

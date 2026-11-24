@@ -7,23 +7,17 @@ checks; installation instructions are not duplicated inside assignments.
 
 ## Clone and locate the project root
 
-Clone once when the instructor publishes the course material:
+First follow [SUBMISSION.md](SUBMISSION.md#1-first-release-clone-a01-and-create-your-private-repository)
+to clone the initial A01 release, connect your own private homework repository and
+invite the instructor. That guide is the single reference for Git remotes,
+updates on each new assignment release and the combined submission before the
+final exam. If you already have a configured working copy, keep using it.
 
-```sh
-git clone https://github.com/enricopuppo/GM2627-students.git
-cd GM2627-students
-```
-
-If you already have a local checkout containing these files, skip cloning and
-configure from that checkout. The root README lists available assignments and
-links to their instructions. Students receive this repository link, with
-instructions and assignment material together.
-No access to the private instructor repository is required.
-
-The project root contains `README.md`, this `SETUP.md`, `CMakeLists.txt`,
-`CMakePresets.json`, `cmake/`, `common/`, `data/` and `assignments/`.
-Run all commands below from that root, not an assignment or handout directory.
-The assignment subdirectory alone is not a complete buildable project.
+The project root contains `README.md`, `SUBMISSION.md`, this `SETUP.md`,
+`CMakeLists.txt`, `CMakePresets.json`, `cmake/`, `common/`, `data/` and `assignments/`.
+Run all build commands from that root, not an assignment or handout directory.
+The assignment subdirectory alone is not a complete buildable project. No access
+to the private instructor development repository is required.
 
 ## Install prerequisites
 
@@ -161,5 +155,6 @@ work. Use CTest commands, filters or labels only as documented for that assignme
 - Viewer reports `not implemented`: complete the indicated computational TODO; do not edit viewer integration.
 
 For task requirements, evidence, submission instructions and course conduct rules,
-consult the repository README and the relevant assignment material. Publication
-must supply any remaining course-specific instructions in this repository.
+consult [SUBMISSION.md](SUBMISSION.md), the repository README and the relevant
+assignment material. The instructor will announce the exact final-exam cutoff
+and any further course-specific requirements.
