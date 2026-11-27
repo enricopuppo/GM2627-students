@@ -98,4 +98,4 @@ implementation (`ctest --preset student -E starter_todo`); build its test execut
 first if you choose to run release checks.
 
 Prepare the evidence listed in the handout. Follow the [submission guide](../../SUBMISSION.md)
-for your private repository, assignment updates and combined submission before the final exam.
+for your public homework repository, assignment updates and combined submission before the final exam.

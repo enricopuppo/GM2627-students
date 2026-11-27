@@ -9,14 +9,14 @@ The instructor will disclose A02-A04 progressively in this same repository.
 ## Start here
 
 1. Follow [the Git and submission guide](SUBMISSION.md) to clone once, create your
-   independent private homework repository and grant the instructor access.
+   independent public homework repository.
 2. Follow [SETUP.md](SETUP.md) to install prerequisites, configure the shared build
    tree and build the assignment target you need.
 3. Each time the instructor discloses a new assignment, follow the
    [update procedure](SUBMISSION.md#3-update-whenever-a-new-assignment-is-disclosed).
    It preserves your existing solutions and adds the new starter.
 4. Submit **all four assignments together before your final exam**, using your
-   private repository URL and the full submitted commit hash, as described in
+   public repository URL and the full submitted commit hash, as described in
    [the submission procedure](SUBMISSION.md#4-submit-all-assignments-together-before-the-final-exam).
    The instructor will announce the exact cutoff for your exam session.
 
@@ -52,7 +52,6 @@ computational functions in `skeleton/`; the supplied application owns loading,
 rendering, controls and export. Detailed function contracts are in the assignment
 header and matching skeleton comments. Handouts specify tasks and required evidence.
 
-Final submission uses a private GitHub repository, not a project ZIP. Keep your
-solutions private and push them to your own `origin`; the course repository is
-`upstream`, used to fetch releases and corrections. Course rules on collaboration,
+Push your work to your public GitHub repository at `origin`. Use the course
+repository at `upstream` to fetch releases and corrections. Course rules on collaboration,
 attribution and code assistance remain in effect.

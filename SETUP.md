@@ -7,9 +7,9 @@ checks; installation instructions are not duplicated inside assignments.
 
 ## Clone and locate the project root
 
-First follow [SUBMISSION.md](SUBMISSION.md#1-first-release-clone-a01-and-create-your-private-repository)
-to clone the initial A01 release, connect your own private homework repository and
-invite the instructor. That guide is the single reference for Git remotes,
+First follow [SUBMISSION.md](SUBMISSION.md#1-first-release-clone-a01-and-create-your-public-repository)
+to clone the course repository and connect your own public homework repository.
+That guide explains Git remotes,
 updates on each new assignment release and the combined submission before the
 final exam. If you already have a configured working copy, keep using it.
 

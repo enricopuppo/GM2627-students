@@ -1,18 +1,18 @@
 # Working with Git and submitting the assignments
 
-Use **one independent private GitHub repository for all four assignments**.
+Use **one independent public GitHub repository for all four assignments**.
 Clone the course repository once, update your working copy each time the
 instructor discloses a new assignment, and submit all assignments together
 **before your final exam**. There is no separate submission at each release.
 The instructor will announce the exact submission cutoff for your exam session.
 
-## 1. First release: clone A01 and create your private repository
+## 1. First release: clone A01 and create your public repository
 
 The initial course release contains **A01 only**. A02-A04 will be added later;
 placeholder descriptions do not mean an assignment has been released.
 
 Sign in to GitHub and create a new repository named, for example,
-`GM2627-homework`. Set its visibility to **Private**. Leave it empty: do not add
+`GM2627-homework`. Set its visibility to **Public**. Leave it empty: do not add
 a README, licence or `.gitignore`. Create an independent repository using **New
 repository**, rather than forking the course repository.
 
@@ -24,7 +24,7 @@ cd GM2627-homework
 ```
 
 Set the two remote names below. Replace `YOUR_USERNAME` with your GitHub username
-and adjust the private repository name if you chose another one:
+and adjust the homework repository name if you chose another one:
 
 ```sh
 git remote rename origin upstream
@@ -35,26 +35,21 @@ git remote -v
 
 Authenticate to GitHub when requested, using your normal GitHub Git credentials
 or credential manager. The first push copies the starter and its course history
-into your private repository. The resulting remotes must be:
+into your public homework repository. The resulting remotes must be:
 
 | Remote | Destination | Use |
 |---|---|---|
 | `upstream` | `enricopuppo/GM2627-students` | Fetch assignments and instructor corrections |
-| `origin` | Your private homework repository | Push your work and final submission |
+| `origin` | Your public homework repository | Push your work and final submission |
 
 If you already cloned the course repository, use that existing directory and
 skip the clone command. Check `git remote -v`: rename `origin` only if it still
 points to the course repository. If the two remotes are already configured as
 above, do not add or rename them again.
 
-Immediately invite GitHub user **`enricopuppo`** as a collaborator on your private
-repository: **Settings > Collaborators > Add people**. The instructor must accept
-the invitation to access the repository. A repository URL alone does not grant
-access. Keep the repository private and retain instructor access through assessment.
-
-For GitHub's account and access steps, see
-[creating a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
-and [inviting a collaborator](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository).
+If you already created a private homework repository, change its visibility to
+**Public** and keep using the same checkout and remotes. The instructor can open
+the public repository directly using its URL. Keep it public through assessment.
 
 ## 2. Develop and save your work
 
@@ -89,7 +84,7 @@ The supplied `.gitignore` excludes the shared build tree.
 
 Push only to **your `origin`**. You do not submit implementations to the course
 repository and do not open a pull request there. A local commit records your
-work locally; a push copies those commits to your own private GitHub repository.
+work locally; a push copies those commits to your own public GitHub repository.
 
 ## 3. Update whenever a new assignment is disclosed
 
@@ -108,7 +103,7 @@ git push origin main
 `fetch` downloads the instructor's commits without changing your working files.
 `merge` incorporates them while keeping your own committed implementations.
 For example, when A02 is added, your A01 solution remains and the new A02 starter
-appears beside it. The final push saves the combined history in your private
+appears beside it. The final push saves the combined history in your public
 repository. You do not clone again, replace your working directory or delete
 completed assignments.
 
@@ -157,9 +152,10 @@ git rev-parse HEAD
 ```
 
 The working tree must be clean, the push must succeed, and the last command prints
-the **full commit hash** identifying your submitted version. Check on GitHub that
-this commit is present in your private repository and that the instructor has
-accepted collaborator access. Uncommitted or unpushed files are not included.
+the **full commit hash** identifying your submitted version. Open the repository
+URL in a browser window where you are signed out of GitHub and verify that you
+can view the repository and the submitted commit. Uncommitted or unpushed files
+are not included.
 
 Submit a short text entry or text file through the university submission system
 containing:
